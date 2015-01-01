@@ -1,0 +1,9 @@
+{% if data  %}
+    <ul> 
+    {% for entry in data  %}
+        <li><a href="/blog/{{ entry.id }}/"> {{ entry.title }}</a></li>
+    {% endfor  %}
+    </ul>
+{% else %}
+    <p> No recent blog posts.</p>
+{% endif %}
