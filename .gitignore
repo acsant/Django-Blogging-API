@@ -7,4 +7,4 @@
 # ignore .pyc files
 blog/*.pyc
 mysite/*.pyc
-blog/migrations/.pyc
+blog/migrations/*.pyc
