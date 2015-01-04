@@ -1,4 +1,5 @@
 {% if data  %}
+    <h1> Recent Blogs </h1>
     <ul> 
     {% for entry in data  %}
         <li><a href="/blog/{{ entry.id }}/"> {{ entry.title }}</a></li>

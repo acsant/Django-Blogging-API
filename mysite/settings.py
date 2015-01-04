@@ -24,6 +24,10 @@ SECRET_KEY = 'esg5asmb-ahw&t18c_#3wk%b*_h073dux_uoyzddgyu(sert0='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+TEMPLATE_CONTEXT_PROCESSORS = ('django.core.context_processors.request',
+    'django.contrib.auth.context_processors.auth',
+    )
+
 TEMPLATE_DEBUG = True
 
 TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
